@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video1</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
+    <style>
+        .grid {
+            margin-top: 2rem;
+            display: grid;
+            grid-template-columns: 1fr 2.5fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            gap: 1rem;
+            width: 40rem;
+        }
+        footer {
+            border-top: 4px solid gray;
+            padding-top: 2rem;
+            margin-top: 2rem;
+            width:37.5rem;
+            text-align: right;
+        }
+
+        div.grid>div {
+            display: flex;
+            flex-direction: row;
+            gap: 1rem;
+        }
+        button {
+            width: 2.5rem;
+            height: 2,5rem;
+            line-height: 4;
+            overflow: hidden;
+
+            border: none;
+            box-shadow: 0 0 0 0.125rem #00000000, inset 0 0 0.25rem 0 #ffffff00;
+        }
+        button:hover {
+            background-color: #9cf;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Videó lejátszása_QMHKMU</h1>
+    </header>
+    <section>
+        <video src="JT_video1.mp4" autoplay="false" controls width="600"></video>
+
+        <div class="grid">
+            <div>
+                <button id="start">
+                    <span class="material-symbols-outlined">
+                        play_arrow
+                    </span>
+                </button>
+                <button id="stop">
+                    <span class="material-symbols-outlined">
+                        stop
+                    </span>
+                </button>
+            </div>
+            <div>
+                <button id="startstop">
+                    <span class="material-symbols-outlined">
+                        play_pause
+                    </span>
+                </button>
+            </div>
+            <div>
+                <button id="mute">
+                    <span class="material-symbols-outlined">
+                        volume_off
+                    </span>
+                </button>
+                <button id="quite">
+                    <span class="material-symbols-outlined">
+                        volume_mute
+                    </span>
+                </button>
+                <button id="loud">
+                    <span class="material-symbols-outlined">
+                        volume_up
+                    </span>
+                </button>
+            </div>
+            <div>
+                <button id="veryslow">
+                    <span class="material-symbols-outlined">
+                        slow_motion_video
+                    </span>
+                </button>
+                <button id="slow">
+                    <span class="material-symbols-outlined">
+                        fast_rewind
+                    </span>
+                </button>
+                <button id="normal">
+                    <span class="material-symbols-outlined">
+                        play_arrow
+                    </span>
+                </button>
+                <button id="fast">
+                    <span class="material-symbols-outlined">
+                        fast_forward
+                    </span>
+                </button>
+                <button id="veryfast">
+                    <span class="material-symbols-outlined">
+                        keyboard_double_arrow_right
+                    </span>
+                </button>
+            </div>
+            <div>
+                <button id="small">
+                    <span class="material-symbols-outlined">
+                        photo_size_select_small
+                    </span>
+                </button>
+                <button id="normalsize">
+                    <span class="material-symbols-outlined">
+                        photo_size_select_large
+                    </span>
+                </button>
+                <button id="big">
+                    <span class="material-symbols-outlined">
+                        photo_size_select_actual
+                    </span>
+                </button>
+            </div>
+            <div>
+                <button id="hasitended">
+                    <span class="material-symbols-outlined">
+                        done
+                    </span>
+                </button>
+                <button id="length">
+                    <span class="material-symbols-outlined">
+                        timer
+                    </span>
+                </button>
+                <button id="currently">
+                    <span class="material-symbols-outlined">
+                        schedule
+                    </span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        let btnClick = (id, onclick) => document.getElementById(id).addEventListener("click", onclick);
+
+        let video = document.querySelector("video");
+
+        btnClick("start", () => video.play());
+        btnClick("stop", () => video.pause());
+        btnClick("startstop", () => video.paused ? video.play() : video.pause());
+
+        btnClick("mute", () => video.volume = 0);
+        btnClick("quite", () => video.volume = 0.5);
+        btnClick("loud", () => video.volume = 1);
+
+        btnClick("veryslow", () => video.playbackRate = 0.5);
+        btnClick("slow", () => video.playbackRate = 0.75);
+        btnClick("normal", () => video.playbackRate = 1);
+        btnClick("fast", () => video.playbackRate = 1.25);
+        btnClick("veryfast", () => video.playbackRate = 1.5);
+
+        btnClick("small", () => video.width = 400);
+        btnClick("normalsize", () => video.width = 600);
+        btnClick("big", () => video.width = 800);
+
+        btnClick("hasitended", () => alert(video.ended));
+        btnClick("length", () => alert(video.length));
+        btnClick("currently", () => alert(video.currentTime));
+    </script>
+</body>
+</html>

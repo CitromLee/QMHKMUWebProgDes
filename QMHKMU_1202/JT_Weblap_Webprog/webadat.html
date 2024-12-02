@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>webadat</title>
+    <style>
+        body {
+            background-image: url(kepek/hatter.jpg);
+            font-family: Tahoma, sans-serif;
+        }
+
+        header {
+            width: 100%;
+        }
+
+        .centred {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 100%;
+            margin-bottom: 25px;
+        }
+
+        footer {
+            position: fixed;
+            bottom: 20px;
+            left: 0;
+            width: 100%;
+            text-align: center;
+        }
+
+        td {
+            font-size: 17pt;
+            text-align: center;
+            width: 33%;
+        }
+
+        .content {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 80%;
+        }
+
+        table {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        section, footer {
+            color: white;
+        }
+
+        a:link {
+            color: white;
+            font-weight: bold;
+        }
+
+        a:visited {
+            color: lightcyan;
+        }
+
+        a:hover {
+            color: lightgray;
+        }
+        a:active {
+            color: lightgray;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <header>
+            <a href="kezdolap.html"><img src="kepek/the.jpg" alt="THE" class="centred"></a>
+            <table width="100%">
+                <tr>
+                    <td><a href="database.html">Adatbázis rendszerek</a></td>
+                    <td><a href="html5.html">Webprogramozás & design</a></td>
+                    <td><a href="webadat.html">Webes adatkezelő környezetek</a></td>
+                </tr>
+            </table>
+        </header>
+
+        <section>
+            <div style="display:inline-flex; width:100%; margin-top: 20px;">
+                <div style="width:80%">
+                    <h3>Webprogramozás & design</h3>
+                    <div>Oktató: Dr. Bednarik László</div>
+                    <div>Kredit: 5</div>
+                    <p><b>Tematika</b></p>
+                    <ul>
+                        <li>XML kialakulása, XML szabvány elemei.</li>
+                        <li>XDM modell elemei, XDM modell készítése.</li>
+                        <li>XMLSchema elemek áttekintése, tervezési módszertan.</li>
+                        <li>JSON modell elemei. JSON séma kezelése.</li>
+                        <li>JSON API programozása. YAML programozása.</li>
+                        <li>A DOM API szabvány, alkalmazása.</li>
+                        <li>Az XSLT transzformációs szabvány.</li>
+                        <li>XPath szabvány eleme.</li>
+                        <li>InfoSet, XDM, XInclude szabványok.</li>
+                        <li>Kliens oldali adatperzisztencia lehetőségei.</li>
+                        <li>Értékelés.</li>
+                    </ul>
+                </div>
+                <div style="width:40%">
+                    <img src="kepek/json.jpg" alt="json" style="width:100%; margin-top: 90px;"> 
+                </div>
+            </div>
+
+            <div><b>Forrás:</b></div>
+            <div>https://nicholaszhan.com/</div>
+        </section>
+    </div>
+
+    <footer>JT, QMHKMU, 2024</footer>
+</body>
+</html>
