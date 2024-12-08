@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Rendszerek</title>
+    <style>
+        body {
+            background-repeat:repeat-y;
+            background-size:contain
+        }
+
+        header {
+            width: 25%;
+            margin-left: 40%;
+            text-align: center;
+            background:#1a1a1ab0 no-repeat;
+            background-position: 100%;
+            border-radius: 15px;
+            mix-blend-mode: luminosity;
+            background-attachment: scroll;
+        }
+
+        header h1 {
+            font-size: 54px;
+            color: rgb(210, 210, 210)
+        }
+
+        header h1:hover {
+            color:rgb(255, 255, 255);
+            background-color:#1a1a1aec;
+            border-radius: 15px;
+        }
+
+        main div {
+            width: 100%;
+            position: static;
+            font-size: 26px;
+            text-align: center;
+            color: rgb(255, 255, 255);
+            background-color: #1a1a1acf;
+            background-position: 100%;
+            border-radius: 15px;
+            background-attachment:local;
+            align-content: center;
+        }
+        main div::backdrop {
+            background-color:aqua;
+            mix-blend-mode: luminosity;
+        }
+        main div:hover {
+            background-color:#1a1a1aec;
+        }
+        main div img {
+            width: 90%;
+            mix-blend-mode: normal;
+            opacity: 1;
+        }
+        main div h2 a {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Rendszerek</h1>
+    </header>
+
+    <div class="buttonmenu">
+        <a href="/Mainpage.html">Főoldal</a>
+        <a href="">Rendszerek</a>
+        <a href="/Video.html">Videó</a>
+        <a href="/Urlap.html">Űrlap</a>
+    </div>
+
+    <main style="display:flex;flex-direction:unset; margin-top: 100px">
+        <div>
+            <h2>
+                <a href="https://skyrim.fandom.com/wiki/Leveling_Up">Karakterfejlesztés(Szintlépés)</a>
+            </h2>
+            <img src="/Media/SkyrimLevellingSystem.jpg" alt="Szintezésrendszer.">
+            <p>
+                A szabadon alakítható karakterfejlesztés lehetővé teszi, hogy a képességfákon 
+                keresztül szintezéssel új perkeket szerezz. Fejlesztheted a karakteredet harcosként, 
+                mágusként vagy tolvajként, miközben a tapasztalatot a képességek használatával növeled.
+            </p>
+            <aside>
+            <h2>
+                <a href="https://skyrim.fandom.com/wiki/World_Map">Világépítés és Felfedezés</a>
+            </h2>
+            <img src="/Media/SkyrimWorldMapSystem.png">
+            <p>
+                A nyílt világ felfedezése során bejárhatod a hatalmas tájakat, ősi romokat 
+                fedezhetsz fel, vagy börtönökben kincseket kereshetsz. A gyors utazás 
+                funkcióval egyszerűbbé válik a helyszínek közötti navigáció.
+            </p>
+                </aside>
+            <h2>
+                <a href="https://skyrim.fandom.com/wiki/Dragon">Sárkányokkal Kapcsolatos Rendszerek</a>
+            </h2>
+            <img src="/Media/SkyrimDragonSystem.jpg">
+            <p>
+                A sárkányok legyőzése különleges képességeket és nyersanyagokat biztosít. 
+                Sárkánykiáltásaid ereje növekszik, miközben sárkánylelkeket nyersz. A sárkányok 
+                vadászata a játék központi eleme, tele kihívással és jutalmakkal.
+            </p>
+            <aside>
+            <h2>
+                <a href="https://skyrim.fandom.com/wiki/Smithing">Kovácsolási Rendszer</a>
+            </h2>
+            <img src="/Media/SkyrimSmithingSystem.jpg">
+            <p>
+                Kovácsműhelyekben különféle nyersanyagokból fegyvereket és páncélokat készíthetsz, 
+                valamint meglévő felszereléseidet javíthatod és erősítheted. A sárkánycsontok és 
+                pikkelyek ritka, erős tárgyak alapanyagai.
+            </p>
+                </aside>
+            <h2>
+                <a href="https://skyrim.fandom.com/wiki/Alchemy">Alkimista Rendszer</a>
+            </h2>
+            <img src="/Media/SkyrimAlchemySystem.webp">
+            <p>
+                A Skyrim világában számos alapanyagot gyűjthetsz, mint növények, gombák 
+                és ásványok. Ezeket felhasználva készíthetsz gyógyító főzeteket, mérgeket, 
+                vagy akár speciális hatásokat nyújtó italokat alkimista asztaloknál.
+            </p>
+            <aside>
+            <h2>
+                <a href="https://skyrim.fandom.com/wiki/Factions">Frakciórendszer</a>
+            </h2>
+            <img src="/Media/SkyrimFactionSystem.jpg">
+            <p>
+                Több frakcióhoz is csatlakozhatsz, amelyek egyedi történetszálakat és 
+                jutalmakat kínálnak. A Tolvajok Céhe és a Sötét Testvériség a lopakodásra, 
+                míg a Télihold Főiskola a mágiára fókuszál. Részt vehetsz a polgárháborúban, 
+                és eldöntheted, hogy a Viharőröket vagy a Birodalmi Légiót támogatod.
+            </p>
+                </aside>
+        </div>
+        <div style="margin-left:12px">
+                <aside>
+            <h2>
+                <a href="https://skyrim.fandom.com/wiki/Quests">Küldetésrendszer</a>
+            </h2>
+            <img src="/Media/SkyrimQuestSystem.jpg">
+            <p>
+                A fő történet mellett rengeteg mellékküldetést teljesíthetsz, amelyek mélyítik 
+                a világ történetét és felfedezési lehetőségeit. Véletlenszerű események 
+                és karakterek kérései színesítik a játékélményt.
+            </p>
+                </aside>
+            <h2>
+                <a href="https://skyrim.fandom.com/wiki/Follower">Társak Rendszere</a>
+            </h2>
+            <img src="/Media/SkyrimLydia.jpg">
+            <p>
+                Karaktereket vagy állatokat bérelhetsz fel kísérőként, hogy segítsenek a harcban, 
+                vagy extra felszerelést hordjanak. A társak személyisége és képességei 
+                változatosak, így minden játékos találhat kedvére valót.
+            </p>
+            <h2>
+                <a href="https://elderscrolls.fandom.com/wiki/The_Elder_Scrolls_V:_Hearthfire#Building_a_homestead">Lakberendezés és Építkezés</a>
+            </h2>
+            <img src="/Media/SkyrimHouseSystem.png">
+            <p>
+                Házakat vásárolhatsz, amelyeket saját ízlésed szerint rendezhetsz be. 
+                A Hearthfire DLC lehetőséget ad saját otthon építésére, ahol családot alapíthatsz, 
+                és további funkciókat adhatsz hozzá, például műhelyeket vagy istállókat.
+            </p>
+            <aside>
+            <h2>
+                <a href="https://skyrim.fandom.com/wiki/Sneak">Lopakodási Rendszer</a>
+            </h2>
+            <img src="/Media/SkyrimSneakSystem.jpg">
+            <p>
+                A lopakodás lehetővé teszi, hogy ellenfeleid észrevétele nélkül mozogj, 
+                vagy meglepetésszerű támadásokat hajts végre. Zsebtolvajlás során értékes 
+                tárgyakat lophatsz emberi fajoktól, miközben észrevétlenségre törekedsz.
+            </p>
+                </aside>
+            <h2>
+                <a href="https://skyrim.fandom.com/wiki/Category:Merchant_NPCs">Kereskedelmi és Gazdasági Rendszer</a>
+            </h2>
+            <img src="/Media/SkyrimTradeSystem.jpg">
+            <p>
+                Kereskedhetsz boltokban, hogy aranyhoz juss, vagy felszereléseket vásárolj. 
+                A kovácsolás és alkímia rendszerek segítségével saját fegyvereket, 
+                páncélokat és főzeteket készíthetsz. Aranyat szerezhetsz küldetések teljesítésével vagy fosztogatással.
+            </p>
+                <aside>
+            <h2>
+                <a href="https://skyrim.fandom.com/wiki/Attacking">Harcrendszer</a>
+            </h2>
+            <img src="/Media/SkyrimFightSystem.jpg">
+            <p>
+                A harc többféle stílust kínál: használhatsz közelharci fegyvereket, mint kardok és pörölyök, 
+                távolsági fegyvereket, mint íjak, valamint különböző mágikus varázslatokat. 
+                A sárkánykiáltások különleges képességeket biztosítanak, amelyek stratégiai előnyt nyújtanak a csatákban.
+            </p>
+                </aside>
+        </div>
+    </main>
+
+    <footer style="margin-top: 12px; width: fit-content">
+        A <span style="font-weight: bold;"> The Elder Scrolls V: Skyrim a Bethesda Game Studios</span> által fejlesztett és a Bethesda Softworks által kiadott videojáték, amely az általuk birtokolt The Elder Scrolls sorozat része.
+        Minden, a játékhoz kapcsolódó tartalom, beleértve a karaktereket, a történetet, a zenét és a művészi elemeket, a Bethesda tulajdonát képezi.
+        A játék és a kapcsolódó szellemi tulajdonok minden jogát a <b>Bethesda Softworks és anyavállalata, a ZeniMax Media LLC</b> fenntartja.
+    </footer>
+</body>
+</html>

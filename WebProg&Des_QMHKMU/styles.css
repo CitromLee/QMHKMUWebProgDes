@@ -1,0 +1,57 @@
+body {
+    background-color: #1a1a1a;
+    background-image:  url('/Media/Mainpage_wallpaper.jpg');
+    background-size: cover;
+}
+
+.buttonmenu {
+    height: 10%;
+    width: 11%;
+    background:none;
+    mix-blend-mode: luminosity;
+    z-index: 100;
+    position: absolute;
+    top: 10px;
+}
+
+.buttonmenu a {
+    padding: 4px 4px 6px 6px;
+    width:auto;
+    text-decoration: none;
+    font-size: 24px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #fecb00;
+    display: block;
+    background-color: #1a1a1a99;
+    mix-blend-mode:lighten;
+}
+
+.buttonmenu a:first-child {
+    border-top: 4px solid red;
+}
+
+.buttonmenu a:last-child {
+    border-bottom: 4px solid red;
+}
+
+.buttonmenu a:hover {
+    background-color: rgba(0, 0, 0, 0.666);
+    width: 115%;
+    font-size: 30px;
+    color:#ffffff
+}
+
+footer {
+    width: 100%;
+    text-align: center bottom;
+    background-color: #1a1a1ad0;
+    color: white;
+    padding: 10px;
+    mix-blend-mode: luminosity;
+    position:relative;
+    bottom:0;
+}
+
+footer:hover {
+    background-color: #1a1a1ae3;
+}

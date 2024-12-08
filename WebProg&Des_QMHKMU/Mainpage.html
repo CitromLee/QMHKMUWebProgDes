@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>QMHKMU Főoldal</title>
+    <style>
+        article p {
+            padding: 0.5em;
+            width: 80%;
+            margin-left:12%;
+            position:sticky;
+            font-size: 26px;
+            text-align: center;
+            color: rgb(255, 255, 255);
+            background-color: #1a1a1acf;
+            background-position: 100%;
+            border-radius: 15px;
+            mix-blend-mode: luminosity;
+            background-attachment:local;
+        }
+
+        article p:hover {
+            background-color:#1a1a1aec;
+        }
+
+        header {
+            width: 25%;
+            margin-left: 40%;
+            text-align: center;
+            background:#1a1a1ab0 no-repeat;
+            background-position: 100%;
+            border-radius: 15px;
+            mix-blend-mode: luminosity;
+            background-attachment: scroll;
+        }
+        header:hover {
+            background-color:#1a1a1aec;
+        }
+
+        header a {
+            font-size: 54px;
+            color: rgb(210, 210, 210)
+        }
+
+        header a:hover {
+            color:rgb(255, 255, 255);
+        }
+
+        .photos {
+            display: flex;
+            justify-content: space-evenly;
+            flex-direction: row;
+            gap:1em;
+            width: 100%;
+        }
+
+        .photos img {
+            width: 50%;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <a href="https://elderscrolls.bethesda.net/en" target="_blank">The Elder Scrolls V Skyrim</a>
+        <img src="Media/Kurzor.png" alt="Kattints a szövegre hogy megnyitsd az oldalát!" style="rotate: -45deg; width: 25px; height: 35px; text-align: end;">
+    </header>
+    
+    <nav class="buttonmenu">
+        <a href="">Főoldal</a>
+        <a href="/Systems.html">Rendszerek</a>
+        <a href="/Video.html">Videó</a>
+        <a href="/Urlap.html">Űrlap</a>
+    </nav>
+    <article>
+        <p>
+            A The Elder Scrolls V: Skyrim egy nyílt világú szerepjáték, amely a <span style="font-weight: bold;">Bethesda Game Studios</span> gondozásában készült
+            és a The Elder Scrolls sorozat ötödik része. A játék Tamriel kontinensének északi régiójában, Skyrim földjén
+            játszódik, ahol a játékos egy szabadon alakítható karakter bőrébe bújhat. Az epikus történet a világ végét jelentő
+            sárkányok visszatérését állítja középpontba, de számtalan mellékszál, felfedezhető helyszín és különleges kaland vár
+            a játékosra.
+        </p>
+        <p>Skyrim világában a játékos teljes szabadságot élvez: bejárhatja a hatalmas tájakat, elmerülhet a mély barlangokban,
+             elfogadhat küldetéseket, felfedezheti az ősi romokat, vagy akár csak nyugodtan barangolhat a természetben.
+            Lehetősége van különböző frakciókhoz csatlakozni, mint például a Tolvajok Céhéhez vagy a Télihold Főiskolához,
+            ahol mágikus tudását fejlesztheti. A karakterfejlesztési rendszer lehetővé teszi, hogy a játékos saját játékstílusa
+            szerint alakítsa ki hősét, akár harcosként, mágusként, akár árnyékban mozgó tolvajként.
+        </p>
+        <p>
+            A gazdag és dinamikus világot számos rendszer teszi még mélyebbé, mint a sárkányokkal való harc,
+            az alkimista kísérletek, a kovácsolás, vagy a beszélgetések során hozott döntések, amelyek kihatnak a világra
+            és a történetre. Skyrim tele van titkokkal, amelyek csak arra várnak, hogy felfedezzék őket, így minden játékos
+            saját egyedi élményben részesülhet.
+        </p>
+    </article>
+
+    <div class="photos">
+        <img src="/Media/SkyrimLevelling.jpg">
+        <img src="/Media/SkyrimHarc.jpg">
+        <img src="/Media/SkyrimUlfric.jpg">
+        <img src="/Media/SkyrimAlduin.jpg">
+    </div>
+
+    <footer style="margin-top: 12px; width: fit-content">
+        A <span style="font-weight: bold;"> The Elder Scrolls V: Skyrim a Bethesda Game Studios</span> által fejlesztett és a Bethesda Softworks által kiadott videojáték, amely az általuk birtokolt The Elder Scrolls sorozat része.
+        Minden, a játékhoz kapcsolódó tartalom, beleértve a karaktereket, a történetet, a zenét és a művészi elemeket, a Bethesda tulajdonát képezi.
+        A játék és a kapcsolódó szellemi tulajdonok minden jogát a <b>Bethesda Softworks és anyavállalata, a ZeniMax Media LLC</b> fenntartja.
+    </footer>
+</body>
+</html>

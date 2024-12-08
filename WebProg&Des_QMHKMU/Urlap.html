@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="processer" href="Feldolgozo.php">
+    <title>Űrlap</title>
+    <style>
+        section form {
+            padding-top: 12px ;
+            color: white;
+            margin-left: 15%;
+            padding: 0.5em;
+            width: 80%;
+            margin-left:12%;
+            position:sticky;
+            font-size: 26px;
+            text-align: left;
+            color: rgb(255, 255, 255);
+            background-color: #1a1a1acf;
+            background-position: 100%;
+            border-radius: 15px;
+            mix-blend-mode: luminosity;
+            background-attachment:local;
+        }
+        section div {
+            padding-top: 12px ;
+            color: white;
+            margin-left: 15%;
+            padding: 0.5em;
+            width: 80%;
+            margin-left:12%;
+            position:sticky;
+            font-size: 26px;
+            text-align: left;
+            color: rgb(255, 255, 255);
+            background-color: #1a1a1acf;
+            background-position: 100%;
+            border-radius: 15px;
+            mix-blend-mode: luminosity;
+            background-attachment:local;
+        }
+        #color {
+            mix-blend-mode: normal;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="buttonmenu">
+        <a href="/Mainpage.html">Főoldal</a>
+        <a href="/Systems.html">Rendszerek</a>
+        <a href="/Video.html">Videó</a>
+        <a href="">Űrlap</a>
+    </div>
+    
+    <section>
+        <form action="Feldolgozo.php" method="post" name="urlap" id="urlap">
+            <label for="sarkanylegyozes">
+                Miért gondolod, hogy egy sárkány legyőzéséhez mágikus fegyverre lehet szükség?
+            <input type="text" id="sarkanylegyozes" name="sarkanylegyozes"
+            title="Gondolat" placeholder="Gondolatod" autofocus autocomplete="off">
+            </label><br>
+
+            <label for="elderscroll">
+                Mit gondolsz, mire használhatják az ősi tekercseket (Elder Scrolls) egy fantasy világban?
+            <input type="text" id="elderscroll" name="elderscroll"
+            title="Gondolat" placeholder="Bármit" autofocus autocomplete="off">
+            </label><br>
+
+            <label for="varazslat">
+                Szerinted milyen hatással lehet egy varázslat használata a varázslóra?
+            <input type="text" id="varazslat" name="varazslat"
+            title="Varázslat hatás vélemény" placeholder="Vélemény" autofocus autocomplete="off">
+            </label><br><br>
+
+            <label for="fegyver">
+                Melyik fegyvert választanád egy kalandra?
+                <input list="fegyverek" id="fegyver" name="fegyver" placeholder="Fegyverválasztás" title="Fegyverzet kiválasztás"
+                autofocus autocomplete="off">
+                <datalist id="fegyverek">
+                    <option value="kard és pajzs">Kard és pajzs</option>
+                    <option value="íj és nyíl">Íj és nyíl</option>
+                    <option value="varázslat">Varázslat</option>
+                    <option value="puszta kéz">Puszta kéz (harcművészet)</option>
+                    <option value="tőrök">Tőrök</option>
+                    <option value="buzogány">Buzogány</option>
+                </datalist>
+            </label><br><br>
+
+            <label for="env">
+                Melyik környezetben indulnál felfedezésre?<br>
+                <ol style="list-style:decimal;">
+                    <li>
+                        <input type="radio" id="env1" name="env" value="Havas hegycsúcs">
+                        <label for="env1">Havas hegycsúcs</label><br>
+                    </li>
+                    <li>
+                        <input type="radio" id="env2" name="env" value="Sötét erdők">
+                        <label for="env2">Sötét erdők</label><br>
+                    </li>
+                    <li>
+                        <input type="radio" id="env3" name="env" value="Elhagyatott romok">
+                        <label for="env3">Elhagyatott romok</label><br>
+                    </li>
+                    <li>
+                        <input type="radio" id="env4" name="env" value="Nyüzsgő város">
+                        <label for="env4">Nyüzsgő város</label><br>
+                    </li>
+                    <li>
+                        <input type="radio" id="env5" name="env" value="Romos kastély">
+                        <label for="env5">Romos kastély</label>
+                    </li>
+                </ol>
+            </label><br>
+
+            <label for="sarkanysz">
+                Mennyire szereted a sárkányokat?
+                <input type="range" id="sarkanysz" name="sarkanysz" min="1" max="10" value="5" step="1" title="1 és 10 közötti érték" placeholder="Mennyire szereted?">
+            </label><br>
+
+            <label for="magia">
+                Mennyire fontos számodra a mágia egy fantasy világban?
+                <input type="range" id="magia" name="magia" min="1" max="10" value="5" step="1" title="1 és 10 közötti érték" placeholder="Mennyire fontos szerinted?">
+            </label><br>
+
+            <label for="bator">
+                Mennyire vagy bátor, ha szembe kell nézned az ismeretlennel?
+                <input type="range" id="bator" name="bator" min="1" max="10" value="5" step="1" title="1 és 10 közötti érték" placeholder="Mennyire vagy bátor?">
+            </label><br>
+            <label style="mix-blend-mode: normal;" id="color" name="color">
+                Kedvenc színed kérlek válaszd ki!
+                <input style="mix-blend-mode: normal;" type="color" id="color" name="color" value="#ff0000">
+            </label>
+        </form>
+
+        <div class="sidebyside">
+            <input type="submit" value="Elküld" form="urlap">
+            <input type="submit" value="Elküld ellenőrzés nélkül" formnovalidate form="urlap">
+        </div>
+    </section>
+
+    <footer style="margin-top: 12px; width: fit-content">
+        A <span style="font-weight: bold;"> The Elder Scrolls V: Skyrim a Bethesda Game Studios</span> által fejlesztett és a Bethesda Softworks által kiadott videojáték, amely az általuk birtokolt The Elder Scrolls sorozat része.
+        Minden, a játékhoz kapcsolódó tartalom, beleértve a karaktereket, a történetet, a zenét és a művészi elemeket, a Bethesda tulajdonát képezi.
+        A játék és a kapcsolódó szellemi tulajdonok minden jogát a <b>Bethesda Softworks és anyavállalata, a ZeniMax Media LLC</b> fenntartja.
+    </footer>
+</body>
+</html>
