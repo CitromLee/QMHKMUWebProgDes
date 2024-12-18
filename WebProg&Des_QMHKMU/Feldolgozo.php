@@ -11,9 +11,9 @@
         echo "<h2>Űrlap adatok:</h2>";
 
         // Változók inicializálása az esetleges hiányzó mezők elkerülése érdekében
-        $sarkanylegyozes = isset($_POST["sarkanylegyozes"]) ? $_POST["sarkanylegyozes"] : "Nincs beírva!";
-        $elderscroll = isset($_POST["elderscroll"]) ? $_POST["elderscroll"] : "Nincs beírva!";
-        $varazslat = isset($_POST["varazslat"]) ? $_POST["varazslat"] : "Nincs megadva";
+        $nev = isset($_POST["nev"]) ? $_POST["nev"] : "Nincs beírva név.";
+        $ev = isset($_POST["ev"]) ? $_POST["ev"] : "Nincs megadva dátum!";
+        $sarkany = isset($_POST["sarkany"]) ? "Szereted a sárkányokat!" : "Nem szereted a sárkányokat.";
         $fegyver = isset($_POST["fegyver"]) ? $_POST["fegyver"] : "Nincs kiválasztva";
         $kornyezet = isset($_POST["env"]) ? $_POST["env"] : "Nincs kiválasztva";
         $sarkanysz = isset($_POST["sarkanysz"]) ? $_POST["sarkanysz"] : "Nincs megadva";
@@ -22,14 +22,14 @@
         $color = isset($_POST["color"]) ? $_POST["color"] : "Nem adtál meg kedvenc színt!";
 
         // Adatok megjelenítése
-            echo "<p><strong>Sárkánylegyőzéshez kellő eszközök vélemény: </strong> " . htmlspecialchars($sarkanylegyozes) . "</p>";
-            echo "<p><strong>Elder Scroll használata vélemény: </strong> " . htmlspecialchars($elderscroll) . "</p>";
-            echo "<p><strong>Varázslat hatása vélemény: </strong> " . htmlspecialchars($varazslat) . "</p>";
+            echo "<p><strong>Neved: </strong> " . htmlspecialchars($nev) . "</p>";
+            echo "<p><strong>Születési dátumod: </strong> " . htmlspecialchars($ev) . "</p>";
+            echo "<p><strong>Szereted a sárkányokat: </strong> " . htmlspecialchars($sarkany) . "</p>";
             echo "<p><strong>Fegyver választás:</strong> " . htmlspecialchars($fegyver) . "</p>";
             echo "<p><strong>Kiválasztott környezet: </strong> " . htmlspecialchars($kornyezet) . "</p>";
-            echo "<p><strong>Sárkány szeretet: </strong> " . htmlspecialchars($sarkanysz) . "</p>";
-            echo "<p><strong>Mágia fontosság vélemény: </strong> " . htmlspecialchars($magia) . "</p>";
-            echo "<p><strong>Ismeretlen bátorság: </strong> " . htmlspecialchars($bator) . "</p>";
+            echo "<p><strong>Sárkány szeretet: </strong> " . htmlspecialchars($sarkanysz) . "/10</p>";
+            echo "<p><strong>Mágia fontosság vélemény: </strong> " . htmlspecialchars($magia) . "/10</p>";
+            echo "<p><strong>Ismeretlen bátorság: </strong> " . htmlspecialchars($bator) . "/10</p>";
             echo '<p style="color:' . $color . ';"><strong>Kedvenc színed a szöveg színeként jelenik meg </strong></span>';
         } else {
             echo "<h2>Űrlap nem lett beküldve!</h2>";

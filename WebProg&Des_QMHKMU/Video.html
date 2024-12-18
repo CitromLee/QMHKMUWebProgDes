@@ -8,32 +8,49 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
     <style>
         #buttongrid {
-            border-top: 4px solid rgb(106, 25, 226);
+            display:grid;
+            border-top: 8px solid rgb(0, 0, 0);
             padding-top: 2rem;
             margin-top: 1rem;
-            text-align: center;
+            text-align: left;
+            padding-left: 48px;
             margin-left: 10%;
-            color: #e9a805
+            color: #e9a805;
+            grid-template-columns: 1.5fr 6fr;
+            grid-template-rows: 1fr 1fr 1fr;
         }
         div div button {
-            background-color: rgb(0, 183, 255);
-            border-width: 4px;
-            border-color: rgb(97, 255, 202);
+            background-color: rgb(0, 146, 204);
+            border-width: 3px;
+            border-color: rgb(229, 250, 89);
+        }
+        #gombok {
+            padding-top: 12px;
+            padding-left: 12px;
+            padding-right: 12px;
+            padding-bottom: 12px;
+            margin-left: 12px;
+            margin-right: auto;
+            margin-bottom: auto;
+            color: rgb(255, 255, 255);
+            background-color: #1a1a1acf;
+            border-radius: 15px;
+            mix-blend-mode: luminosity;
         }
     </style>
 </head>
 <body>
     <div class="buttonmenu">
-        <a href="/Mainpage.html">Főoldal</a>
-        <a href="/Systems.html">Rendszerek</a>
+        <a href="Mainpage.html">Főoldal</a>
+        <a href="Systems.html">Rendszerek</a>
         <a href="">Videó</a>
-        <a href="/Urlap.html">Űrlap</a>
+        <a href="Urlap.html">Űrlap</a>
     </div>
 
     <video style="margin-left: 25%;" src="/Media/SkyrimVideo.mp4" controls autoplay="false" width="700px"></video>
 
     <div id="buttongrid" class="buttongrid" style="width: 1000px">
-        <div style="margin-top: 12px;">
+        <div id="gombok" style="margin-top: 12px;">
             <button id="indit">
                 <span class="material-symbols-outlined">
                 play_arrow
@@ -45,14 +62,14 @@
                 </span>
             </button>
         </div>
-        <div style="margin-top: 12px;">
+        <div id="gombok" style="margin-top: 12px;">
             <button id ="inditleallit">
                 <span class="material-symbols-outlined">
                 play_pause
                 </span>
             </button>
         </div>
-        <div style="margin-top: 12px;">
+        <div id="gombok" style="margin-top: 12px;">
             <button id="nema">
                 <span class="material-symbols-outlined">
                 volume_off
@@ -69,7 +86,7 @@
                 </span>
             </button>
         </div>
-        <div style="margin-top: 12px;">
+        <div id="gombok" style="margin-top: 12px;">
             <button id="nlassu">
                 <span class="material-symbols-outlined">
                     slow_motion_video
@@ -96,7 +113,7 @@
                 </span>
             </button>
         </div>
-        <div style="margin-top: 12px;">
+        <div id="gombok" style="margin-top: 12px;">
             <button id="kicsi">
                 <span class="material-symbols-outlined">
                     photo_size_select_small
@@ -113,7 +130,7 @@
                 </span>
             </button>
         </div>
-        <div style="margin-top: 12px;">
+        <div id="gombok" style="margin-top: 12px;">
             <button id="vegevane">
                 <span class="material-symbols-outlined">
                 done
@@ -132,10 +149,14 @@
         </div>
     </div>
 
-    <footer style="margin-top: 12px; width: fit-content">
+    <footer style="margin-top: 48px; width: fit-content;">
         A <span style="font-weight: bold;"> The Elder Scrolls V: Skyrim a Bethesda Game Studios</span> által fejlesztett és a Bethesda Softworks által kiadott videojáték, amely az általuk birtokolt The Elder Scrolls sorozat része.
         Minden, a játékhoz kapcsolódó tartalom, beleértve a karaktereket, a történetet, a zenét és a művészi elemeket, a Bethesda tulajdonát képezi.
-        A játék és a kapcsolódó szellemi tulajdonok minden jogát a <b>Bethesda Softworks és anyavállalata, a ZeniMax Media LLC</b> fenntartja.
+        A játék és a kapcsolódó szellemi tulajdonok minden jogát a <b>Bethesda Softworks és anyavállalata, a ZeniMax Media LLC</b> fenntartja.<br>
+        Források: <br>
+        W3Schools: <a href="https://www.w3schools.com/">https://www.w3schools.com/</a><br>
+        Skyrim oldala: <a href="https://elderscrolls.bethesda.net/en/">https://elderscrolls.bethesda.net/en/</a>
+        Videó link: <a href="https://www.youtube.com/watch?v=6umhTJQltak"></a>
     </footer>
 
     <script>
